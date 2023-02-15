@@ -37,11 +37,11 @@
 
         "baseUrl": ".",
         "paths": {
-            "@/*": ["./*"],
+            "@/src/*": ["./*"],
             "@/public/*": ["./public/*"]
         }
     },
-    "exclude": ["node_modules", "./out/**/*", "cypress/**/*.ts"],
+    "exclude": ["node_modules", "./out/**/*", "src/cypress/**/*.ts"],
     "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"]
 }
 
