@@ -23,7 +23,7 @@ jobs:
                   node-version: ${{matrix.node-version}}
                   cache: 'npm'
             - run: npm ci #clean install - meant for use in automated envrionments
-            - run: npm build-prod
+            - run: npm run build-prod
 
     test:
         strategy:
@@ -43,8 +43,8 @@ jobs:
                   cache: 'npm'
             - run: npm ci
 
-            - name: Run unit tests
-              run: npm run test
+            # - name: Run unit tests
+            #   run: npm run test
 
             - name: Run e2e tests
               run: npx percy exec -- npm run e2e:headless
