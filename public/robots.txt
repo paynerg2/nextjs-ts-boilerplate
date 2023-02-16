@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://url.ie
+
+# Sitemaps
+Sitemap: https://url.ie/sitemap.xml
