@@ -10,7 +10,7 @@ jobs:
     build:
         strategy:
             matrix:
-                node-version: [14.x, 16.x, 18.x]
+                node-version: [16.x, 18.x] #14.x removed because of an open issue with nextjs (https://github.com/vercel/next.js/issues/45052)
 
         name: Build with ${{matrix.node-version}}
         runs-on: ubuntu-latest
