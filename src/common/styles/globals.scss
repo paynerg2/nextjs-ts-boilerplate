@@ -1,0 +1,12 @@
+@import 'variables';
+@import 'mixins';
+
+/**
+ *  This is where we set any theme values - i.e. default typography, and other properties inherent to the theme/design system.
+ */
+
+body {
+    @include font-size($defaultFontSize);
+    color: $primary-font-color;
+    font-family: $primarySansSerif;
+}

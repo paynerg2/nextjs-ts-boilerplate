@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Merriweather:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import 'mixins';
+
+//******************************************
+//*              Typography
+//******************************************
+$defaultFontSize: 16px;
+$primarySansSerif: 'Inter', sans-serif;
+$primarySerif: 'Merriweather', serif;
+
+//******************************************
+//*                Theme
+//******************************************
+$primary-font-color: #2e2e2e;
+
+//******************************************
+//*                Layout
+//******************************************
+$padding: 2px;
+$margin: 2px;
+$borderRadius: 2px;
+
+//******************************************
+//*                 Misc.
+//******************************************

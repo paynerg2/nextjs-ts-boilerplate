@@ -1,0 +1,33 @@
+/**
+ * Utility for consistent typography
+ * $size: font-size in px
+ */
+@function toRem($size) {
+    $remSize: $size / 16px;
+    @return $remSize * 1rem;
+}
+
+@mixin font-size($size) {
+    font-size: $size;
+    font-size: toRem($size);
+}
+
+/**
+ * Encapsulate boilerplate for pseudo-elements
+ */
+@mixin pseudo($display: block, $position: absolute, $content: '') {
+    content: $content;
+    display: $display;
+    position: $position;
+}
+
+/**
+ * Encapsulate boilerplate for text truncation
+ * $truncation-boundary: Width at which to truncate text. Expects units of size.
+ */
+@mixin truncate($truncation-boundary) {
+    max-width: $truncation-boundary;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
