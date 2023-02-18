@@ -22,7 +22,7 @@ jobs:
               with:
                   node-version: ${{matrix.node-version}}
                   cache: 'npm'
-            - run: npm ci #clean install - meant for use in automated envrionments
+            - run: npm ci #clean install - meant for use in automated environments
             - run: npm run build-prod
 
     test:
