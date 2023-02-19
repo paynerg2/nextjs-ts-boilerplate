@@ -37,13 +37,14 @@
 
         "baseUrl": ".",
         "paths": {
-            "@components/*": ["./src/common/components/*"],
-            "@modules/*": ["./src/modules/*"],
-            "@public/*": ["./public/*"],
-            "@styles/*": ["./src/common/styles/*"]
+            "@/*": ["./src/common/*"],
+            "@/public/*": ["./public/*"],
+            "@/pages/*": ["./src/pages/*"],
+            "@/modules/*": ["./src/modules/*"]
         }
     },
-    "exclude": ["node_modules", "./out/**/*", "cypress/**/*.ts"],
+    "types": ["jest", "@testing-library/jest-dom"],
+    "exclude": ["node_modules", "./out/**/*", "cypress/**/*.ts", "./cypress.config.ts"], // cypress.config included fixes jest/chai 'expect' collision (https://github.com/cypress-io/cypress/issues/22059)
     "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"]
 }
 
