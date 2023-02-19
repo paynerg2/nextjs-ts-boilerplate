@@ -16,7 +16,8 @@
         "e2e:headless": "start-server-and-test dev http://localhost:3000 cypress:headless",
         "postbuild": "next-sitemap",
         "test": "jest",
-        "test:ci": "jest --ci"
+        "test:ci": "jest --ci",
+        "check-types": "tsc --noEmit && tsc --project cypress --noEmit"
     },
     "dependencies": {
         "@netlify/plugin-nextjs": "^4.30.4",
