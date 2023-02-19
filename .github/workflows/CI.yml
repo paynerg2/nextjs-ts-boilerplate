@@ -43,8 +43,8 @@ jobs:
                   cache: 'npm'
             - run: npm ci
 
-            # - name: Run unit tests
-            #   run: npm run test
+            - name: Run unit tests
+              run: npm run test
 
             - name: Run e2e tests
               run: npx percy exec -- npm run e2e:headless
